@@ -1,6 +1,7 @@
 import Home from './Home.jsx';
 import About from './About.jsx';
 import Resume from './Resume.jsx';
+import Hobbies from './Hobbies.jsx';
 
 export default function Main(){
   return (
@@ -8,6 +9,7 @@ export default function Main(){
       <Home />
       <About />
       <Resume />
+      <Hobbies />
     </main>
   )
 }

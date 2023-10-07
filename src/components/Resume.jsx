@@ -47,10 +47,16 @@ const Skills = () => {
   );
   return (
     <>
-      <h3 className="text-4xl font-bold mb-10">Skills</h3>
-      <ul>{skillsListElements}</ul>
-      <h3 className="text-4xl font-bold my-10">Programming Skills</h3>
-      <ul>{programmingSkillsListElements}</ul>
+      <div className="grid gap-10 md:grid-cols-2">
+        <div className="flex flex-col gap-8">
+          <h3 className="text-4xl font-bold">Skills</h3>
+          <ul>{skillsListElements}</ul>
+        </div>
+        <div className="flex flex-col gap-8">
+          <h3 className="text-4xl font-bold">Programming Skills</h3>
+          <ul>{programmingSkillsListElements}</ul>
+        </div>
+      </div>
     </>
   );
 };
@@ -59,8 +65,8 @@ export default function Resume() {
   return (
     <>
       <section>
-        <div className="w-full bg-blue-100">
-          <div className="w-[80%] mx-auto py-5">
+        <div className="bg-blue-100 py-14">
+          <div className="w-[80%] mx-auto">
             <h3 className="text-4xl font-bold">Education</h3>
             <ResumeElements
               year={"2013 - 2017"}
@@ -85,7 +91,7 @@ export default function Resume() {
               paragraph={lorem}
               isOJT={false}
             />
-            <h3 className="text-4xl font-bold">Experience</h3>
+            <h3 className="text-4xl font-bold py-5">Experience</h3>
             <ResumeElements
               year={"May 22 - August 11, 2023"}
               school={"Makati Medical Center"}
@@ -93,7 +99,9 @@ export default function Resume() {
               paragraph={lorem}
               isOJT={true}
             />
-            <Skills />
+            <div>
+              <Skills />
+            </div>
           </div>
         </div>
       </section>
