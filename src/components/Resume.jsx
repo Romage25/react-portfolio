@@ -4,9 +4,9 @@ const lorem =
 
 const ResumeElements = ({ year, school, level, paragraph, isOJT }) => (
   <div className="flex flex-row justify-between gap-5 my-10">
-    <div>
+    <div className="w-[300px] md:w-[100px]">
       {!isOJT && (
-        <img src={"education.svg"} alt="education logo" width={"50px"} />
+        <img src={"education.svg"} alt="education logo" width={'100%'}/>
       )}
       {isOJT && <img src={"working.svg"} alt="education logo" width={"50px"} />}
     </div>
