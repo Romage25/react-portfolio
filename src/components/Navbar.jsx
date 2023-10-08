@@ -1,23 +1,6 @@
 import { useState } from "react";
-
-// eslint-disable-next-line react/prop-types
-const NavItem = ({ link, text }) => (
-  <li>
-    <a href={link} className="hover:text-blue-500 hover:underline">
-      {text}
-    </a>
-  </li>
-);
-
-const DropdownMenu = () => (
-  <ul className="mt-3 p-2 shadow w-20 text-right bg-white rounded-md absolute right-0">
-    <NavItem link="#" text="Home" />
-    <NavItem link="#" text="About" />
-    <NavItem link="#" text="Resume" />
-    <NavItem link="#" text="Hobbies" />
-    <NavItem link="#" text="Contact" />
-  </ul>
-);
+import { NavItem } from "./Elements/NavItemElements";
+import { DropdownMenuLink } from "./Elements/DropdownMenuLink";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -48,7 +31,7 @@ export default function Navbar() {
               />
             </svg>
           </label>
-          {isOpen && <DropdownMenu />}
+          {isOpen && <DropdownMenuLink />}
         </div>
       </nav>
 

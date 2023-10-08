@@ -1,6 +1,35 @@
 import { ContactElements } from "./Elements/ContactElements";
 
 export default function Contact() {
+  const contactData = [
+    { link: "mailto:rodelgerodias25@gmail.com", src: "mail", text: "Email" },
+    {
+      link: "https://www.linkedin.com/in/rodel-gerodias-b0a49326b/",
+      src: "linkedin",
+      text: "LinkedIn",
+    },
+    {
+      link: "https://www.facebook.com/rodel.gerodias.7",
+      src: "facebook",
+      text: "Facebook",
+    },
+    {
+      link: "https://www.instagram.com/romage25/",
+      src: "instragram",
+      text: "Instragram",
+    },
+  ];
+
+  const contactMap = contactData.map((contact, i) => {
+    return (
+      <ContactElements
+        key={i}
+        link={contact.link}
+        src={contact.src}
+        text={contact.text}
+      />
+    );
+  });
   return (
     <>
       <div className="bg-blue-100 py-14">
@@ -12,27 +41,7 @@ export default function Contact() {
             placeat.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 place-content-between md:gap-5">
-            <ContactElements
-              link={"mailto:rodelgerodias25@gmail.com"}
-              src={"mail"}
-              text={"Email"}
-            />
-            <ContactElements
-              link={"https://www.linkedin.com/in/rodel-gerodias-b0a49326b/"}
-              src={"linkedin"}
-              text={"LinkedIn"}
-            />         
-            <ContactElements
-              link={"https://www.facebook.com/rodel.gerodias.7"}
-              src={"facebook"}
-              text={"Facebook"}
-            />
-          
-            <ContactElements
-              link={"https://www.instagram.com/romage25/"}
-              src={"instragram"}
-              text={"Instragram"}
-            />
+            {contactMap}  
           </div>
         </div>
       </div>
