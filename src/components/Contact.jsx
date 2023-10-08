@@ -32,8 +32,8 @@ export default function Contact() {
   });
   return (
     <>
-      <div className="bg-blue-100 py-14">
-        <div className="w-[80%] mx-auto">
+      <div className="bg-blue-100 py-14 min-h-[80vh] flex flex-row justify-center items-center">
+        <div className="w-[80%] m-auto">
           <h2 className="text-5xl font-bold text-center mb-5">Contact</h2>
           <p className="mb-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse nihil
@@ -41,7 +41,7 @@ export default function Contact() {
             placeat.
           </p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-5 place-content-between md:gap-5">
-            {contactMap}  
+            {contactMap}
           </div>
         </div>
       </div>
