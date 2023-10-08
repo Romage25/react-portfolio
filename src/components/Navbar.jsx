@@ -12,7 +12,7 @@ export default function Navbar() {
   return (
     <>
       <nav className="md:hidden relative">
-        <div className="dropdown">
+        <div>
           <label
             tabIndex="0"
             className="btn btn-ghost lg:hidden"
@@ -37,11 +37,11 @@ export default function Navbar() {
 
       <nav className="hidden md:block">
         <ul className="flex flex-row gap-5 text-lg">
-          <NavItem link="#" text="Home" />
-          <NavItem link="#" text="About" />
-          <NavItem link="#" text="Resume" />
-          <NavItem link="#" text="Hobbies" />
-          <NavItem link="#" text="Contact" />
+          <NavItem link="#home" text="Home" />
+          <NavItem link="#about" text="About" />
+          <NavItem link="#resume" text="Resume" />
+          <NavItem link="#hobbies" text="Hobbies" />
+          <NavItem link="#contact" text="Contact" />
         </ul>
       </nav>
     </>

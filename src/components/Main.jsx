@@ -7,11 +7,21 @@ import Contact from "./Contact";
 export default function Main() {
   return (
     <main>
-      <Home />
-      <About />
-      <Resume />
-      <Hobbies />
-      <Contact />
+      <section id="home">
+        <Home />
+      </section>
+      <section id="about">
+        <About />
+      </section>
+      <section id="resume">
+        <Resume />
+      </section>
+      <section id="hobbies">
+        <Hobbies />
+      </section>
+      <section id="contact">
+        <Contact />
+      </section>
     </main>
   );
 }

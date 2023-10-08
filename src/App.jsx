@@ -5,7 +5,9 @@ import Footer from "./components/Footer.jsx";
 export default function App() {
   return (
     <>
-      <Header />
+      <div className="fixed top-0 left-0 right-0">
+        <Header />
+      </div>
       <Main />
       <Footer />
     </>

@@ -20,7 +20,7 @@ export default function Footer() {
                   alt="arrow right"
                   className="inline w-4"
                 />
-                Home
+                <a href="#home" className="hover:underline">Home</a>
               </li>
               <li className="flex flex-row gap-5">
                 <img
@@ -28,7 +28,7 @@ export default function Footer() {
                   alt="arrow right"
                   className="inline w-4"
                 />
-                About
+                <a href="#about" className="hover:underline">About</a>
               </li>
               <li className="flex flex-row gap-5">
                 <img
@@ -36,7 +36,7 @@ export default function Footer() {
                   alt="arrow right"
                   className="inline w-4"
                 />
-                Resume
+                <a href="#resume" className="hover:underline">Resume</a>
               </li>
               <li className="flex flex-row gap-5">
                 <img
@@ -44,7 +44,7 @@ export default function Footer() {
                   alt="arrow right"
                   className="inline w-4"
                 />
-                Hobbies
+                <a href="#hobbies" className="hover:underline">Hobbies</a>
               </li>
               <li className="flex flex-row gap-5">
                 <img
@@ -52,7 +52,7 @@ export default function Footer() {
                   alt="arrow right"
                   className="inline w-4"
                 />
-                Contact
+                <a href="#contact" className="hover:underline">Contact</a>
               </li>
             </ul>
           </div>
