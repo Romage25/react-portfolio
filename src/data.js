@@ -47,6 +47,7 @@ export const wordList = [
   "Still learning",
 ];
 
+// eslint-disable-next-line no-unused-vars
 const lorem =
   "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus in perspiciatis, consequuntur odit rem porro explicabo nesciunt modi exercitationem recusandae soluta quas sed vero, illo consectetur vitae assumenda voluptates perferendis?";
 
@@ -90,16 +91,16 @@ export const slidesData = [
   {
     text: "Watching Anime",
     img: "anime",
-    paragraph: `Anime ... ${lorem}`,
+    paragraph: `One of my passions is indulging in anime, where I appreciate the intricate storytelling, unique characters, and diverse themes that each series presents. It's a form of entertainment that allows me to unwind and explore new creative dimensions.`,
   },
   {
     text: "Playing Mobile Legends",
     img: "mobile-legends",
-    paragraph: `Mobile Legends ... ${lorem}`,
+    paragraph: `Another hobby of mine involves competitive gaming, particularly playing Mobile Legends. Engaging in strategic battles and collaborating with a team of fellow gamers provides an exhilarating experience and a sense of camaraderie. It's a way for me to challenge myself while enjoying some exciting gameplay.`,
   },
   {
     text: "Learning more about coding",
     img: "learning",
-    paragraph: `Coding ... ${lorem}`,
+    paragraph: `Furthermore, I'm continuously dedicated to enhancing my programming and coding skills. Learning new languages, exploring advanced concepts, and staying updated with the latest trends in the tech industry are all part of my ongoing journey. This hobby is not only a pathway to my desired career but also a source of genuine fascination and fulfillment. Balancing these hobbies enriches my life and allows me to approach my career goals with a well-rounded perspective.`,
   },
 ];
