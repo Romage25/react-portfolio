@@ -68,15 +68,15 @@ const Slider = () => {
         </div>
         <button
           onClick={prevSlide}
-          className="absolute left-3 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-lg hover:scale-110"
+          className="absolute left-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-lg hover:scale-110"
         >
-          <img src="white-arrow-left.svg" alt="white left arrow" width={'30px'}/>
+          <img src="white-arrow-left.svg" alt="white left arrow" className="w-30px md:w-[30px]"/>
         </button>
         <button
           onClick={nextSlide}
-          className="absolute right-3 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-lg hover:scale-110"
+          className="absolute right-2 top-1/2 transform -translate-y-1/2 bg-gray-700 text-white p-2 rounded-lg hover:scale-110"
         >
-          <img src="white-arrow-right.svg" alt="white right arrow" width={'30px'}/>
+          <img src="white-arrow-right.svg" alt="white right arrow" className="w-30px md:w-[30px]"/>
         </button>
       </div>
     </div>
