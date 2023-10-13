@@ -10,17 +10,17 @@ const Slider = () => {
     {
       text: "Watching Anime",
       img: "anime.jpg",
-      paragraph: lorem,
+      paragraph: `Anime ... ${lorem}`,
     },
     {
       text: "Playing Mobile Legends",
       img: "mobile-legends.avif",
-      paragraph: lorem,
+      paragraph: `Mobile Legends ... ${lorem}`,
     },
     {
       text: "Learning more about coding",
       img: "learning.avif",
-      paragraph: lorem,
+      paragraph: `Coding ... ${lorem}`,
     },
   ];
 
