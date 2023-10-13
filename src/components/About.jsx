@@ -1,6 +1,27 @@
+import { useEffect } from "react";
 import { InfoElements } from "./Elements/InfoElements";
 
 export default function About() {
+  const downloadCV = () => {
+    const fileUrl = "/Rodel-Gerodias-Curriculum-Vitae.pdf";
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Rodel_Gerodias-Curriculum_Vitae.pdf"; 
+    link.style.display = "none";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
+  useEffect(() => {
+    return () => {
+      const link = document.querySelector("a[download='Rodel_Gerodias-Curriculum_Vitae.pdf']");
+      if (link) {
+        link.remove();
+      }
+    };
+  }, []);
+
   return (
     <section>
       <div className="py-14 bg-blue-300">
@@ -21,7 +42,7 @@ export default function About() {
             </div>
             <div className="">
               <h5 className="text-2xl mb-3">Currently building projects...</h5>
-              <button className="bg-blue-500 p-3 rounded-2xl text-white hover:bg-blue-600 hover:text-black">
+              <button onClick={downloadCV} className="bg-blue-500 p-3 rounded-2xl text-white hover:bg-blue-600 hover:text-black">
                 Download CV
               </button>
             </div>
