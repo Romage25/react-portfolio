@@ -1,3 +1,5 @@
+import Slider from "./Slider";
+
 export default function Hobbies() {
   return (
     <>
@@ -11,21 +13,36 @@ export default function Hobbies() {
             soluta, et possimus quaerat! Provident, ratione impedit.
           </p>
           <div className="mt-10">
-          <div className="">
-            <h4 className="text-2xl font-bold mb-5">Watching Anime</h4>
-            <img src="" alt="Anime" />
-            <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non sapiente nemo amet tempora in voluptates, necessitatibus harum hic ullam!</p>
-          </div>
-          <div>
-            <h4 className="text-2xl font-bold mb-5">Playing Mobile Legends</h4>
-            <img src="" alt="Mobile Legends" />
-            <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non sapiente nemo amet tempora in voluptates, necessitatibus harum hic ullam!</p>
-          </div>
-          <div>
-            <h4 className="text-2xl font-bold mb-5">Learning to code</h4>
-            <img src="" alt="learn" />
-            <p className="mt-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam non sapiente nemo amet tempora in voluptates, necessitatibus harum hic ullam!</p>
-          </div>
+            {/* <div className="">
+              <h4 className="text-2xl font-bold mb-5">Watching Anime</h4>
+              <img src="" alt="Anime" />
+              <p className="mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                non sapiente nemo amet tempora in voluptates, necessitatibus
+                harum hic ullam!
+              </p>
+            </div>
+            <div>
+              <h4 className="text-2xl font-bold mb-5">
+                Playing Mobile Legends
+              </h4>
+              <img src="" alt="Mobile Legends" />
+              <p className="mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                non sapiente nemo amet tempora in voluptates, necessitatibus
+                harum hic ullam!
+              </p>
+            </div>
+            <div>
+              <h4 className="text-2xl font-bold mb-5">Learning to code</h4>
+              <img src="" alt="learn" />
+              <p className="mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
+                non sapiente nemo amet tempora in voluptates, necessitatibus
+                harum hic ullam!
+              </p>
+            </div> */}
+            <Slider />
           </div>
         </div>
       </div>

@@ -13,14 +13,16 @@ export const Skills = () => {
   ];
 
   const skillsListElements = skills.map((skill, i) => (
-    <li key={i} className="text-lg ml-11">
-      &bull; {skill}
+    <li key={i} className="text-lg ml-11 flex flex-row gap-3">
+      <span className="block">&bull;</span>
+      <span className="block">{skill}</span>
     </li>
   ));
   const programmingSkillsListElements = programmingSkills.map(
     (progSkill, i) => (
-      <li key={i} className="text-lg ml-11">
-        &bull; {progSkill}
+      <li key={i} className="text-lg ml-11 flex flex-row gap-3">
+        <span className="block">&bull;</span>
+        <span className="block">{progSkill}</span>
       </li>
     )
   );
