@@ -1,39 +1,7 @@
 /* eslint-disable react/prop-types */
-import { ResumeElements } from "./Elements/ResumeElements";
-import { Skills } from "./Elements/SkillsElements";
-const lorem =
-  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus in perspiciatis, consequuntur odit rem porro explicabo nesciunt modi exercitationem recusandae soluta quas sed vero, illo consectetur vitae assumenda voluptates perferendis?";
-
-const resumeData = [
-  {
-    year: "2013 - 2017",
-    school: "Liceo De San Pedro",
-    level: "Junior Highschool",
-    paragraph: lorem,
-    isOJT: false,
-  },
-  {
-    year: "2017 - 2019",
-    school: "Liceo De San Pedro",
-    level: "Senior Highschool",
-    paragraph: lorem,
-    isOJT: false,
-  },
-  {
-    year: "2019 - 2023",
-    school: "Polytechnic University of the Philippines - San Pedro Campus",
-    level: "College",
-    paragraph: lorem,
-    isOJT: false,
-  },
-  {
-    year: "May 22 - August 11, 2023",
-    school: "Makati Medical Center",
-    level: "Technical Support Intern",
-    paragraph: lorem,
-    isOJT: true,
-  },
-];
+import { resumeData } from "../data";
+import ResumeElements from "./Elements/ResumeElements";
+import Skills from "./Elements/SkillsElements";
 
 const resumeMap = resumeData.map((resume, i) => (
   <ResumeElements

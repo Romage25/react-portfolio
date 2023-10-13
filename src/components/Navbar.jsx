@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { NavItem } from "./Elements/NavItemElements";
-import { DropdownMenuLink } from "./Elements/DropdownMenuLink";
+import  NavItem  from "./Elements/NavItemElements";
+import  DropdownMenuLink  from "./Elements/DropdownMenuLink";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);

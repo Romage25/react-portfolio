@@ -1,11 +1,5 @@
+import { wordList } from "../data";
 import { useState, useEffect } from "react";
-
-const wordList = [
-  "Just do it",
-  "Send Codes",
-  "Copy and Paste",
-  "I don't know what I'm doing :)",
-];
 
 export default function Home() {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-export const ContactElements = ({ link, src, text }) => {
+export default function ContactElements({ link, src, text }) {
   return (
     <div className="bg-white p-5 text-center inline-grid rounded-lg shadow-xl">
       <a
@@ -17,4 +17,4 @@ export const ContactElements = ({ link, src, text }) => {
       <h4 className="md:text-2xl">{text}</h4>
     </div>
   );
-};
+}

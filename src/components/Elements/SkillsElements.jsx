@@ -1,17 +1,6 @@
-export const Skills = () => {
-  const skills = [
-    "Adaptable",
-    "Collaborative team player, able to work effective with others (developers, project managers, and quality assurance teams)",
-    "Continous and eagerness to learn",
-    "Keep attention to details",
-  ];
+import { skills, programmingSkills } from "../../data";
 
-  const programmingSkills = [
-    "Knowledgable in Front-End Development (HTML, CSS, JavaScript)",
-    "Knowledgable in SQL and NoSQL databases (MySQL and Firestore Database)",
-    "Experience with collaborative tools (Microsoft Office and Github)",
-  ];
-
+export default function Skills() {
   const skillsListElements = skills.map((skill, i) => (
     <li key={i} className="text-lg ml-11 flex flex-row gap-3">
       <span className="block">&bull;</span>
@@ -40,4 +29,4 @@ export const Skills = () => {
       </div>
     </>
   );
-};
+}

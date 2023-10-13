@@ -1,25 +1,7 @@
-import { ContactElements } from "./Elements/ContactElements";
+import { contactData } from "../data";
+import ContactElements from "./Elements/ContactElements";
 
 export default function Contact() {
-  const contactData = [
-    { link: "mailto:rodelgerodias25@gmail.com", src: "mail", text: "Email" },
-    {
-      link: "https://www.linkedin.com/in/rodel-gerodias-b0a49326b/",
-      src: "linkedin",
-      text: "LinkedIn",
-    },
-    {
-      link: "https://www.facebook.com/rodel.gerodias.7",
-      src: "facebook",
-      text: "Facebook",
-    },
-    {
-      link: "https://www.instagram.com/romage25/",
-      src: "instragram",
-      text: "Instragram",
-    },
-  ];
-
   const contactMap = contactData.map((contact, i) => {
     return (
       <ContactElements
