@@ -1,4 +1,4 @@
-import { skills, programmingSkills } from "../../data";
+import { skills, programmingSkills } from "../../assets/data.json";
 
 export default function Skills() {
   const skillsListElements = skills.map((skill, i) => (

@@ -1,4 +1,4 @@
-import { slidesData } from "../data";
+import { slidesData } from "../assets/data.json";
 import { useState } from "react";
 
 export default function Slider() {

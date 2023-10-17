@@ -1,5 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
-import { contactData } from "../data";
+import { contactData } from "../assets/data";
 import ContactElements from "./Elements/ContactElements";
 
 export default function Contact() {

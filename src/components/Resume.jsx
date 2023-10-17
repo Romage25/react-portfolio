@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import { resumeData } from "../data";
+import { resumeData } from "../assets/data.json"
 import ResumeElements from "./Elements/ResumeElements";
 import Skills from "./Elements/SkillsElements";
 

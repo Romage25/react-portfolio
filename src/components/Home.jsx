@@ -1,4 +1,4 @@
-import { wordList } from "../data";
+import { wordList } from "../assets/data.json";
 import { useState, useEffect } from "react";
 
 export default function Home() {

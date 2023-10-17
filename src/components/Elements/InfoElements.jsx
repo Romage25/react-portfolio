@@ -1,6 +1,7 @@
-import { myInfo } from "../../data";
+import { myInfo } from '../../assets/data';
 
 export default function InfoElements() {
+  
   return myInfo.map((info, i) => (
     <h6 key={i}>
       <span className="text-lg font-bold w-40 block md:inline-block">
