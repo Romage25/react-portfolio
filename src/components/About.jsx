@@ -4,10 +4,10 @@ import InfoElements from "./Elements/InfoElements";
 
 export default function About() {
   const downloadCV = () => {
-    const fileUrl = "/Rodel-Gerodias-Curriculum-Vitae.pdf";
+    const fileUrl = "/Rodel-Gerodias-Resume.pdf";
     const link = document.createElement("a");
     link.href = fileUrl;
-    link.download = "Rodel_Gerodias-Curriculum_Vitae.pdf";
+    link.download = "Rodel-Gerodias-Resume.pdf";
     link.style.display = "none";
     document.body.appendChild(link);
     link.click();
@@ -17,7 +17,7 @@ export default function About() {
   useEffect(() => {
     return () => {
       const link = document.querySelector(
-        "a[download='Rodel_Gerodias-Curriculum_Vitae.pdf']"
+        "a[download='Rodel-Gerodias-Resume.pdf']"
       );
       if (link) {
         link.remove();
